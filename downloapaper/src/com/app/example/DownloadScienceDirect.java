@@ -1,9 +1,10 @@
 package com.app.example;
-/*NOTE: run this class as java application to download papers from Springer
+/*NOTE: run this class as java application to download papers from ScienceDirect
  * 
  * 
  * This class is design to download pdf papers for Springer digital library 
- * you just need to add the list of URLS of the papers that you wants to download from Springer
+ * you just need to add the list of URLS of the papers that you wants to download from ScienceDirect
+ * The list of URLs papers must be copied in 'papers.txt' file in 'lib' folder
  */
 import java.awt.Desktop;
 import java.awt.Robot;
@@ -71,7 +72,10 @@ public class DownloadScienceDirect {
 				WebDriver driver1 = new FirefoxDriver();
 				driver1.get(papaerURL);
 				Thread.sleep(3000);
-				driver1.findElement(By.xpath("//a[@title='Download']")).click();
+				
+				WebElement parentElement = driver1.findElement(By.id("toolbarViewerRight"));
+				WebElement childElement = parentElement.findElement(By.id("download"));
+				childElement.click();;
 				
 				// Handling pop up window to save the file
 				Robot robotObject = new Robot();

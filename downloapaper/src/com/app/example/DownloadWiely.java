@@ -3,6 +3,8 @@ package com.app.example;
 /*
  * This class will download paper and save it to download folder
  * This code has been customized to download paper from Wiely online library
+ * 
+ * The list of URLs papers must be copied in 'papers.txt' file in 'lib' folder
  */
 import java.awt.Robot;
 import java.awt.event.KeyEvent;

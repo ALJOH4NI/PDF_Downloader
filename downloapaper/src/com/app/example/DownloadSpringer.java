@@ -4,6 +4,7 @@ package com.app.example;
  * 
  * This class is design to download pdf papers for Springer digital library 
  * you just need to add the list of URLS of the papers that you wants to download from Springer
+ * The list of URLs papers must be copied in 'papers.txt' file in 'lib' folder
  */
 import java.awt.Desktop;
 import java.awt.Robot;
