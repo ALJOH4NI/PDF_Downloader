@@ -7,7 +7,7 @@ The tool uses selenium driver to download pdf from digital libraries.
 2. Firefox browser.
 
 # About the PDF_Downloader:
-The tool has 5 classes that run independently of other, where each class in the project has been design to download pdfs from digital libraries(IEEE, ACM, etc.) and save the pdf to download folder of your system. The tool read a file 'papers.txt' located in 'lib' folder inside the project. Where this file can have a list URL provided by you, for a specific library that you want to download from it.
+The tool has 5 classes that run independently of other, where each class in the project has been designed to download pdfs from digital libraries(IEEE, ACM, etc.) and save the pdf to download folder of your system. The tool read a file 'papers.txt' located in 'lib' folder inside the project. Where this file can have a list URL provided by you, for a specific library that you want to download from it.
 
 
 
